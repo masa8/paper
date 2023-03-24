@@ -1,0 +1,65 @@
+
+\documentclass[review,authoryear]{elsarticle}
+\setcitestyle{numbers} % <--- this is new
+\usepackage{natbib}
+\usepackage{subfigure}
+\usepackage{lineno}
+\usepackage[colorlinks,urlcolor=blue]{hyperref}
+\usepackage{amsmath,amssymb}
+\usepackage{diagbox}
+\usepackage{soul}
+\usepackage{multirow}
+\usepackage{graphicx} 
+\usepackage{caption}
+\usepackage{setspace}
+\usepackage[top=30truemm,bottom=30truemm,left=25truemm,right=25truemm]{geometry}
+\usepackage[compact]{titlesec}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{caption}
+
+\makeatletter
+\def\ps@pprintTitle{%
+ \let\@oddhead\@empty
+ \let\@evenhead\@empty
+ \def\@oddfoot{}%
+ \let\@evenfoot\@oddfoot}
+ \def\BState{\State\hskip-\ALG@thistlm}
+\makeatother
+
+\titlespacing{\section}{0pt}{10pt}{0pt}
+\titlespacing{\subsection}{0pt}{0pt}{0pt}
+%\renewcommand{\baselinestretch}{2.0}
+
+\begin{document}
+% \begin{multicols}{2}
+\begin{frontmatter}
+	\title{Title}
+	\author{Auther$^{a*}$}
+	\author{Co-Auther$^{a}$}
+	\address{$^{a}$AGRAN LLC}
+	
+	\cortext[mycorrespondingauthor]{Corresponding author: auther@agran.jp}
+	
+	\begin{abstract}
+		your abstract here
+	\end{abstract}
+	\begin{keyword}
+		1st keyword \sep 2nd keyword  \sep BetterCareMadeEasy
+	\end{keyword}
+\end{frontmatter}
+	
+%\linenumbers 
+
+\section{Introduction}
+ Sample Sitation Here\citep{mbj2012}
+\section{Method}
+\section{Conclusion}
+
+
+\newpage
+\bibliographystyle{junsrt}
+\bibliography{../ref/refs}
+
+\end{document}
