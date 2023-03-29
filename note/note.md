@@ -4,6 +4,39 @@
 ### Outcome
 ### Output
 
+
+##Learn To Pay Attention
+### Input
+Saumya Jetley, Nicholas A. Lord, Namhoon Lee, Philip H.S. Torr
+https://arxiv.org/abs/1804.02391
+
+### Outcome
+Fix this:
+ CNN is largely inscrutable, impeding understanding of their successes and failures alike
+ all attention map are implemented as post-hoc additions to fully trained networks
+ 
+ 
+### Output
+    Idea:
+        we expect that enforcing a more focused and parsimonious use of image information should aid in generalisation over changes in the data distribution
+    Estimator:
+        Wee propose a trainable attention estimator
+  
+          The novelty of our contribution lies in 
+            repurposing the global image representation 
+                as a query to estimate
+          we redesign standard architectures 
+                such that they must classify the input image 
+                    using only a weighted combination of local features, 
+                        with the weights represented here 
+                            by the attention map. 
+                The network is thus forced to learn a pattern of attention relevant 
+                    to solving the task at hand.
+
+### Note
+https://towardsdatascience.com/learn-to-pay-attention-trainable-visual-attention-in-cnns-87e2869f89f1
+
+
 ## Self-Supervised Pre-Training for Transformer-Based Person Re-Identification
 
 ### Input

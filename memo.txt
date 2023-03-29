@@ -1,6 +1,6 @@
-@misc{2111.12084,
-Author = {Hao Luo and Pichao Wang and Yi Xu and Feng Ding and Yanxin Zhou and Fan Wang and Hao Li and Rong Jin},
-Title = {Self-Supervised Pre-Training for Transformer-Based Person Re-Identification},
-Year = {2021},
-Eprint = {arXiv:2111.12084},
+@misc{1804.02391,
+Author = {Saumya Jetley and Nicholas A. Lord and Namhoon Lee and Philip H. S. Torr},
+Title = {Learn To Pay Attention},
+Year = {2018},
+Eprint = {arXiv:1804.02391},
 }
