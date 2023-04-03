@@ -4,7 +4,82 @@
 ### Outcome
 ### Output
 
+##Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps
+### Input
+Karen Simonyan
+Andrea Vedaldi
+Andrew Zisserman
+Visual Geometry Group, University of Oxford
 
+### Outcome
+ Fix the problem of ConvNet visualisation
+### Output
+We consider two visualisation techniques
+ - The first one generates an image, which maximises the class score
+    Sc(I) = w^{T}_{c} I + b_{c};
+    w= ∂S_c/∂I | I_{0}
+ - The second technique computes a class saliency map, specific to a given image and class
+    Given an image I0 (with m rows and n columns) and a class c,
+    class saliency map M ¥in R^{mxn}
+    the derivative w is found by back-propagation
+    M_{ij} = max_{c} |w_{h(i;j;c)}|
+    
+
+## On the Unreasonable Effectiveness of Centroids in Image Retrieval
+### Input
+Mikolaj Wieczorek∗
+Barbara Rychalska
+Jacek Dabrowski
+
+### Outcome
+        more robust to outliers
+        more stable features
+        both retrieval time and storage requirements are reduced significantly
+  
+### Output
+    we propose to use the mean centroid representation both during training and retrieval
+    
+    We propose to use an aggregated item representation
+    We propose the Centroid Triplet Loss (CTL). Instead of comparing the distance of an anchor image𝐴 to positive and negative instances, CTL measures the distance between 𝐴 and class centroids 𝑐𝑃 and 𝑐𝑁 representing either the same class as the anchor or a different class respectively.
+    
+    Outperforms the current state- of-the-art.        
+    DeepFashion CTL-S-R50 CE
+        mAP     0.404
+        Acc@1   0.294
+    Street2Shop CTL-L-R50IBN CE
+        mAP     0.598
+        Acc@1   0.537
+    
+## Leveraging sequential information from multivariate behavioral sensor data to predict the moment of calving in dairy cattle using deep learning
+### Input
+Arno Liseune a, Dirk Van den Poel a, Peter R. Hut c, Frank J.C.M. van Eerdenburg c, Miel Hostens b c
+Faculty of Economics and Business Administration, Ghent University, Belgium
+Faculty of Bioscience Engineering, Ghent University,Belgium
+Faculty of Veterinary Medicine, Utrecht University,Netherlands
+### Outcome
+Calving is one of the most critical moments during the life of a cow and their calves.
+Timely supervision is therefore crucial for animal welfare as well as the farm economics.
+
+### Output
+ Two sensors
+    the neck and leg of each cow measured 
+        rumination, 
+        eating, 
+        lying, 
+        standup, 
+        walking
+        inactive behavior 
+            on a minute basis.
+ A deep learning model
+ Results show that 
+        calvings within 24 h    
+            recall of 65%
+            precision of 77%,
+         calvings occurring within 3 h 
+            recall of 57%
+            precision of 49%
+ Moreover, we find that using the missing value imputations significantly improves the predictive performance for observations containing up to 60% of missing values.
+ 
 ##Learn To Pay Attention
 ### Input
 Saumya Jetley, Nicholas A. Lord, Namhoon Lee, Philip H.S. Torr
