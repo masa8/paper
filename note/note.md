@@ -36,11 +36,18 @@ Philipp Ko ̈hl1,2
         
     Results
         we were able to surpass the results of state-of-the-art single camera trackers by +13% IDF1 score. 
+        
+        Person Detection   
+            Approach        Trained on      AR      AP
+            Faster R-CNN    COCO            14.6    11.3
+            Faster R-CNN    MTA             64.8    61.6 ***
+            Cascade R-CNN   MTA             69.5     67.0
     
 ### Note
-    IDF1 = 2 * (precision * recall) / (precision + IDF * recall)
-    F1 = 2 * (precision * recall) / (precision + recall)
-    the main difference between IDF1 and F1 is that IDF1 takes into account the rarity of the named entities in the text, whereas F1 only considers precision and recall. IDF1 is particularly useful when the named entities in the text are rare or have a skewed distribution, as it assigns more weight to the rare named entities and can result in a more balanced evaluation of the model's performance.
+    IDF1 = 2 * (precision * recall) / (precision + IDF * recall)   
+    F1 = 2 * (precision * recall) / (precision + recall)   
+    the main difference between IDF1 and F1 is that IDF1 takes into account the rarity of the named entities in the text, whereas F1 only considers precision and recall. IDF1 is particularly useful when the named entities in the text are rare or have a skewed distribution, as it assigns more weight to the rare named entities and can result in a more balanced evaluation of the model's performance.    
+    MTMCT stands for Multiple-Target Multi-Camera Tracking    
     
 ##Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps
 ### Input
