@@ -4,6 +4,44 @@
 ### Outcome
 ### Output
 
+
+## The MTA Dataset for Multi Target Multi Camera Pedestrian Tracking by Weighted Distance Aggregation
+### Input
+https://openaccess.thecvf.com/content_CVPRW_2020/papers/w70/Kohl_The_MTA_Dataset_for_Multi-Target_Multi-Camera_Pedestrian_Tracking_by_Weighted_CVPRW_2020_paper.pdf
+Karlsruhe Institute of Technology (KIT), Karlsruhe, Germany
+Philipp Ko ̈hl1,2
+
+### Outcome
+    Fix this:
+        Because For now,
+            - Existing multi target multi camera tracking (MTMCT) datasets are small
+            - The creation of new real world datasets is hard as privacy has to be guaranteed and the labeling is tedious. 
+            - Therefore a MTMCT dataset has been developed from Video Game.
+         By making new Realworld dataset.
+         
+### Output
+    The system’s pipeline consists of stages for :
+        - person detection, 
+        - person re-identification, 
+        - single camera multi target tracking, 
+        - track distance calculation, 
+            by :
+            - a single camera time constraint
+            - a multi camera time constraint using overlapping camera areas
+            - an appearance feature distance
+            - a homography matching with pair- wise camera homographies,
+            - a linear prediction based on the velocity and the time difference of track
+
+        - track association.
+        
+    Results
+        we were able to surpass the results of state-of-the-art single camera trackers by +13% IDF1 score. 
+    
+### Note
+    IDF1 = 2 * (precision * recall) / (precision + IDF * recall)
+    F1 = 2 * (precision * recall) / (precision + recall)
+    the main difference between IDF1 and F1 is that IDF1 takes into account the rarity of the named entities in the text, whereas F1 only considers precision and recall. IDF1 is particularly useful when the named entities in the text are rare or have a skewed distribution, as it assigns more weight to the rare named entities and can result in a more balanced evaluation of the model's performance.
+    
 ##Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps
 ### Input
 Karen Simonyan
