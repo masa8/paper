@@ -17,7 +17,7 @@ Philipp Ko ̈hl1,2
             - Existing multi target multi camera tracking (MTMCT) datasets are small
             - The creation of new real world datasets is hard as privacy has to be guaranteed and the labeling is tedious. 
             - Therefore a MTMCT dataset has been developed from Video Game.
-         By making new Realworld dataset.
+         By creating a new large scale simulated dataset
          
 ### Output
     The system’s pipeline consists of stages for :
