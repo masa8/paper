@@ -43,6 +43,26 @@ Philipp Ko ̈hl1,2
             Faster R-CNN    MTA             64.8    61.6 ***
             Cascade R-CNN   MTA             69.5     67.0
     
+        Person re-identification(market1501 dataset)
+            Approach        Trained on    mAP    R-1
+            AGW            MTA-ReID    33.7        64.0
+
+        Tracking by ( based on Faster R-CNN Strong baseline)  on MTA dataset
+        the core task is to track people across multiple cameras for as long as possible. 
+            Identity metrics [30] best reflect this requirement
+                 evaluation scores that by dividing the MTA test set into 10 parts with an approximate length of 5 min each 
+                 then mean over all ten parts.
+                 
+            * Single camera tracking
+                    Tracker            IDF1     IDP         IDR        IDs
+                    IoU                 38.1     40.9     35.8        2370.3
+                    DeepSORT        42.0     45.1     39.6        1797.8
+
+            *  Multi camera tracking result
+                    Configuration        IDF1        IDP        IDR        IDs
+                    None            17.3         19.2        15.7        6869.5
+                    All                30.1     33.6        27.3        7107.5
+    
 ### Note
     IDF1 = 2 * (precision * recall) / (precision + IDF * recall)   
     F1 = 2 * (precision * recall) / (precision + recall)   
