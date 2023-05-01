@@ -5,6 +5,45 @@
 ### Output
 
 
+
+## Multimodal Chain-of-Thought Reasoning in Language Models 
+### Input
+Zhuosheng Zhang, Aston Zhang, Mu Li, Hai Zhao, George Karypis, Alex Smola
+https://arxiv.org/pdf/2302.00923.pdf
+
+### Outcome
+Fix this:
+  Existing CoT studies have focused on the language modality.
+  
+### Output
+We propose 
+    - Multimodal-CoT that incorporates language (text) and vision (images) modalities 
+        - into a two-stage framework
+            - rationale generation
+            - answer inference. 
+    - our model
+        - outperforms the previous state-of-the-art LLM (GPT-3.5) 
+            - by 16 percentage points (75.17%->91.68% accuracy) on the ScienceQA
+
+        - Backbone: UnifiedQABase
+        - INPUT: 
+            - question text (Q),
+            - context text (C),
+            - multiple options (M)
+            
+        - OUTPUT:
+            - A/Reasoning->A/Explaining->A/
+            
+        - Overview of our Multimodal-CoT framework. 
+            - Multimodal-CoT consists of two stages: (i) rationale generation and (ii) answerinference. 
+            - Both stages share the SAME model architecture but differ in the input and output. 
+                - In the first stage, 
+                    we feed the model with language and vision inputs to generate rationales. (QCM→R)
+                - In the second stage, 
+                    we append the original language input with the rationale generatedfrom the first stage. (QCMR→A)
+                    Then, we feed the updated language input with the original vision input to the model to infer the answer.
+                
+
 ## The MTA Dataset for Multi Target Multi Camera Pedestrian Tracking by Weighted Distance Aggregation
 ### Input
 https://openaccess.thecvf.com/content_CVPRW_2020/papers/w70/Kohl_The_MTA_Dataset_for_Multi-Target_Multi-Camera_Pedestrian_Tracking_by_Weighted_CVPRW_2020_paper.pdf
